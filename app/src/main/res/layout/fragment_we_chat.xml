@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".wechat.WeChatFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        >
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="60dp"
+            android:background="@color/colorPrimary"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_arrow_drop_down_black_24dp"/>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab"
+            app:tabTextColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:tabMode="scrollable"
+            android:layout_toLeftOf="@id/iv"></com.google.android.material.tabs.TabLayout>
+    </RelativeLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
